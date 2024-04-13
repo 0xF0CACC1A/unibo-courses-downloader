@@ -37,7 +37,7 @@ payload["queryParameters"]["folderID"] = folderID
 url = 'https://unibo.cloud.panopto.eu/Panopto/Services/Data.svc/GetSessions'
 r = s.post(url, json=payload)
 
-regex = r'"FolderName":"(.*?)".*?"IosVideoUrl":"(https.*?mp4)"'
+regex = r'"FolderName":"(.*?)".*?"IosVideoUrl":"(https.*?[mp4|m3u8])"'
 for (i, m) in enumerate(re.finditer(regex, r.text)):
     folderName = m.group(1).replace("\\/", " ")
     url = m.group(2).replace("\\", "")
