@@ -12,7 +12,7 @@ TUTORIAL PANOPTO
 *   dalla barra degli indirizzi, estrai il valore del campo "folderID" (e.g. se https://unibo.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID="8cea2670-08a2-4f20-a11d-afb200e2910f" => "8cea2670-08a2-4f20-a11d-afb200e2910f" ).
 *   hai tutti gli ingredienti per poter eseguire il programma ;)
  
-`./main.py virtuale cookies.json [folderID]`
+`./main.py virtuale cookies.json [id]`
 
 TUTORIAL VIRTUALE
 -----
